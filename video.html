@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="video.css" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My First video web app</h1>
+    <div class="video-container">
+      <iframe class="video" src="friendsThemeSong.mp4"> </iframe>
+      <div class="review">
+        <button class="comment">Comment</button>
+        <button class="likeBtn">
+          <i class="fa fa-thumbs-up like"></i>
+          <span id="like"></span>
+        </button>
+        <button class="dislikeBtn">
+          <i class="fa fa-thumbs-up dislike"></i>
+          <span id="dislike"></span>
+        </button>
+        <p>Comments</p>
+      </div>
+
+      <div class="comment-section">
+        <div class="user-comments">
+          <ul class="ul"></ul>
+        </div>
+        <textarea class="textarea" name="Text" value="" autofocus> </textarea>
+        <input type="button" value="Send" class="send-comment" />
+      </div>
+    </div>
+    <script src="video.js"></script>
+  </body>
+</html>
